@@ -1,4 +1,4 @@
-#SECTION - Membership Operator
+# SECTION - Membership Operator
 
 # 1.------------------------------- in
 # print('g' in "sakshi")
@@ -16,8 +16,3 @@ list1 = [4, 1, 3, 7]
 # 2 ----------------------------------------------- not in
 
 # print (4 not in list1)
-
-
-
-
-

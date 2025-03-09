@@ -1,4 +1,4 @@
-#SECTION - Identity Operator
+# SECTION - Identity Operator
 
 # 1 -------------------- is
 
@@ -8,7 +8,7 @@
 # print (x is y) #True, why? because...
 # print (id(x))
 # print (id(y))
-#both are same, they point to the same memory
+# both are same, they point to the same memory
 
 # 2 -------------------- is not
 

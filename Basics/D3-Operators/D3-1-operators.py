@@ -9,13 +9,13 @@
 # print(5 % 3)  # modulus
 # print(16 // 3)  # floor division -> 5 ans => floor of quotient
 
-#SECTION - Logical Operators 
+# SECTION - Logical Operators
 
 # print ( 2 and 4 ) #4
 # print (2 or 4)#2
 # print(not(2))#False
 
-#SECTION -  Python Function with 'def' keyword
+# SECTION -  Python Function with 'def' keyword
 
 # def order(x):
 #     print("Functioned is called with ",x, "Positive? ")
