@@ -20,7 +20,7 @@
 # d = None    # NOTE NoneType, None is assigned when there's no value assigned to the variable
 # print(type(d))
 
-complex_number = complex(5,7)
+complex_number = complex(5, 7)
 # print(type(complex_number)) #NOTE there's complex number
 # print(type(2.12))
 
