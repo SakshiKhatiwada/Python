@@ -10,4 +10,7 @@
 4. A Python docstring is a string used to document a Python module, class, function or method. Enclosed in triple quotes
 
 5. str[:-1] removes the last character
-5. str[::-1] inverses the string characters
+6. str[::-1] inverses the string characters
+
+7. for i in d:
+        print("%s : %d" % (i, d[i]))  #printing a format
