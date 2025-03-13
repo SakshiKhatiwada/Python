@@ -32,8 +32,8 @@ complex_number = complex(5, 7)
 # l =[ 1, 2, 3]
 # print(type(l)) #NOTE type -> list
 
-# l = (1,2,3)
-# print(type(l)) #NOTE type -> tuple: similar to list, but is immutable -> can't modify once created
+# t = (1,2,3)
+# print(type(t)) #NOTE type -> tuple: similar to list, but is immutable -> can't modify once created
 
 # s = {1,2,3,1}
 # print(type(s)) #NOTE type -> set, should be unique
