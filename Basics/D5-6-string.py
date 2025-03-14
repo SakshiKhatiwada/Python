@@ -24,6 +24,7 @@
 
 # print(str.index('sh')) #first index -> 3
 # print(str.rindex('sh')) #highest index -> 10
+print(str.find('p')) #first index, returns -1 if substring not found, The Only difference between find() and index()
 
 # SECTION - case changing of Strings
 
@@ -32,7 +33,8 @@
 # print(str.title()) #title case
 
 # SECTION - string built-in methods
-string1 = "sakshi is sakshi, she is sweet"
+# string1 = "sakshi is sakshi, she is sweet"
 
-print(string1.startswith("sh"))  # false
-print(string1.endswith("et"))  # true
+# print(string1.startswith("sh"))  # false
+# print(string1.endswith("et"))  # true
+
