@@ -16,8 +16,8 @@ import numpy as np
 
 
 #SECTION - python lists VS numpy arrays
-l = [1,2,3]
-x = np.array([1,2,3])
+# l = [1,2,3]
+# x = np.array([1,2,3])
 
 # l.append(4)
 # l = l+[5]
@@ -31,10 +31,43 @@ x = np.array([1,2,3])
 
 #MULTIPLY
 
-l = l*2 # repeats the list elements twice
-print(l)
+# l = l*2 # repeats the list elements twice
+# print(l)
 
-x = x * 2 # gives element operation 
-print (x)
+# x = x * 2 # gives element operation 
+# print (x)
 
 #NOTE - findings: In Numpy Arrays, operations are performed elementwise
+
+# x = np.sqrt(x)
+# print (x)
+
+# x = np.log(x)
+# print (x)
+
+
+l1 = [1,2,3]
+l2 = [4,5,6]
+a1 = np.array(l1)
+a2 = np.array(l2)
+
+#dot product
+
+#in list
+dot = 0
+for i in range(len(l1)):
+    dot += l1[i] * l2[i]
+# print (dot)
+ 
+#dot product in -> numpy array
+dot = np.dot(a1,a2)
+# print(dot)
+
+sum1 = a1 * a2
+# print(sum1)
+dot = sum(sum1)
+# print('dot ', dot)
+
+#in newer version
+dot = a1 @ a2
+# print(dot)
