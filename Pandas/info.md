@@ -5,3 +5,5 @@
 * at[]
 * iat[]
 * sort_values()
+* .isin()
+* str.contains()
