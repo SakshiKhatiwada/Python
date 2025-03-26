@@ -7,3 +7,5 @@
 * sort_values()
 * .isin()
 * str.contains()
+* pd.to_datetime()
+    > .dt.day and many more functions
