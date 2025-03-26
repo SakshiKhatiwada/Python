@@ -1,0 +1,3 @@
+[submodule "Pandas/complete-pandas-tutorial"]
+	path = Pandas/complete-pandas-tutorial
+	url = https://github.com/KeithGalli/complete-pandas-tutorial.git
