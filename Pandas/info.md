@@ -9,3 +9,14 @@
 * str.contains()
 * pd.to_datetime()
     > .dt.day and many more functions
+
+# Handling Null Values
+* .fillna()
+* .interpolate()
+* .isna()
+* .dropna()
+* .notna()
+
+# Aggregating Data
+* .value_counts()
+* .groupby()
