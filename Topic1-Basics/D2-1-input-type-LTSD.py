@@ -13,7 +13,7 @@
 # print(type(4))
 # print(type("sakshi"))
 
-#  NOTE  c=2+3i  ---------->not i, it uses j
+#  NOTE c=2+3i  ---------->not i, it uses j
 # c=2+3j
 # print(type(c))
 
@@ -39,6 +39,8 @@ complex_number = complex(5, 7)
 # print(type(s)) #NOTE type -> set, should be unique
 # print(s) #{1, 2, 3}
 
-# items = "hello"
+items = "hello"
+dictionary = {items : "value"}
 # dictionary = {"items" : "value"}
+print(dictionary)
 # print(type(dictionary)) #NOTE type -> dict

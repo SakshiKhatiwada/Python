@@ -23,14 +23,13 @@
         
 # func ("hi", "I", "am", "Sakshi", "Khatiwada")
 
-# def func2 (**kwargs):
-    # for val in kwargs.items(): #('a', 1)
-# ('b', 2)
-# ('c', 4)
-    # print(kwargs) #{'a': 1, 'b': 2, 'c': 4}
+def func2 (**kwargs):
+    print("kwargs" , kwargs.items()) # kwargs dict_items([('a', 1), ('b', 2), ('c', 4)])
+    for val in kwargs.items(): #('a', 1) # ('b', 2) # ('c', 4)
+        print(val) #{'a': 1, 'b': 2, 'c': 4}
     # for key, val in kwargs.items():
     #     print(val)
     #     print(key, val)
         
-# func2(a=1, b = 2, c = 4)
+func2(a=1, b = 2, c = 4)
 # func2(b = 2, c = 4, a=4)

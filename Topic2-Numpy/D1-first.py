@@ -1,5 +1,7 @@
 import numpy as np
 
+# NOTE NumPy = Numerical Python
+
 # print (np.__version__)
 
 # a = np.array([1, 2, 3, 3, 5])
@@ -15,52 +17,56 @@ import numpy as np
 # print(b)
 
 
-#SECTION - python lists VS numpy arrays
-# l = [1,2,3]
-# x = np.array([1,2,3])
+# SECTION - python lists VS numpy arrays
+l = [1,2,3]
+x = np.array([1, 2, 3])
 
 # l.append(4)
 # l = l+[5]
 
-# x.append(4)#AttributeError
-# x = x + np.array([4]) #4 is added to each element -> #NOTE - Broadcasting
+# x.append(4)  # AttributeError
+# x = x + np.array([4]) # 4 is added to each element -> #NOTE - Broadcasting
 # x = x + np.array([4,4,4]) # actual way, numpy does this to above
+# NOTE it performs elementwise operation!!
 
-# print(l,x)
+print(l,x) # [1, 2, 3] [1 2 3]
+# print(l[1], x[1]) # NOTE - indexing is same in both
+# print(l[1:3], x[1:3]) # slicing is same in both
 
 
-#MULTIPLY
+# MULTIPLY
 
 # l = l*2 # repeats the list elements twice
 # print(l)
 
-# x = x * 2 # gives element operation 
+# x = x * 2 # gives element operation
 # print (x)
 
-#NOTE - findings: In Numpy Arrays, operations are performed elementwise
+# NOTE - findings: In Numpy Arrays, operations are performed elementwise
 
-# x = np.sqrt(x)
-# print (x)
+print (x)
+x = np.sqrt(x)
+print (x)
 
 # x = np.log(x)
 # print (x)
 
 
-l1 = [1,2,3]
-l2 = [4,5,6]
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
 a1 = np.array(l1)
 a2 = np.array(l2)
 
-#dot product
+# dot product
 
-#in list
+# in list
 dot = 0
 for i in range(len(l1)):
     dot += l1[i] * l2[i]
 # print (dot)
- 
-#dot product in -> numpy array
-dot = np.dot(a1,a2)
+
+# dot product in -> numpy array
+dot = np.dot(a1, a2)
 # print(dot)
 
 sum1 = a1 * a2
@@ -68,6 +74,6 @@ sum1 = a1 * a2
 dot = sum(sum1)
 # print('dot ', dot)
 
-#in newer version
+# in newer version
 dot = a1 @ a2
 # print(dot)

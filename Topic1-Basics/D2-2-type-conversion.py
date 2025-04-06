@@ -12,6 +12,7 @@
 
 # print("sunshine"+"sakshi")
 # print(5+"sakshi") error: can't add int and str
+# print("sakshi" + 6) # TypeError: can only concatenate str (not "int") to str
 
 # SECTION - Explicit Type Conversion
 # s = 12.4
@@ -36,7 +37,7 @@ s = "sakshi"
 # OUTPUTS
 # ['s', 'a', 'k', 's', 'h', 'i']
 # ('s', 'a', 'k', 's', 'h', 'i')
-# {'a', 'i', 'h', 's', 'k'}
+# {'a', 'i', 'h', 's', 'k'} #NOTE - ascending order always
 
 
 # SECTION - Number Conversion under ETC

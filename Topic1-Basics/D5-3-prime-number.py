@@ -8,6 +8,8 @@ flag = 0 #to keep track whether it's prime or not
 for i in range (2, math.ceil(number/2)):
     if (number % i == 0):
        flag = flag + 1
+       if (flag ==1):
+           break # break the loop if not prime
 
 if (flag == 0):
     print (number, " is a prime number")

@@ -10,6 +10,7 @@ li = []
 # print(len(li))
 li = [1, 2, 3]
 # print(len(li))
+# print(li.__len__())
 
 # SECTION - Adding elements using append(), extend()
 
@@ -21,7 +22,7 @@ li.extend((3, 7))  # adds tuple element as normal elements, extend the li
 
 # SECTION - insert()
 li.insert(10, 93)  # insert(index, number), doesn't return any value
-# if given index doesn't lie in the range, it just inserts in the last index
+# NOTE if given index doesn't lie in the range, it just inserts in the last index
 # print(li)
 
 # SECTION - count ()
@@ -31,7 +32,7 @@ list_name = ["s", "a", "k", "s", "h", "i"]
 # raises TypeError is more than one string is passed
 
 # SECTION - del keyword, pop(), remove() built-in methods
-# difference -> remove() takes value-to-remove, del and pop() takes index
+# NOTE difference -> remove() takes value-to-remove, del and pop() takes index
 
 del list_name[2]
 # print(list_name)

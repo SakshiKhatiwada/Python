@@ -18,8 +18,8 @@ obj2.increase()
 
 # SECTION - 2 funcs to list the attributes of an instance (vars()) and class (dir()) in the form of dict
 
-# print(vars(sample)) # attributes of instance of sample
-# print(dir(sample)) #attributes of the class, including of the ancestor class
+print("vars", vars(sample))  # attributes of instance of sample
+print("dir", dir(sample))  # attributes of the class, including of the ancestor class
 
 # SECTION - Class Member Access
 # Built-in functions:
@@ -39,6 +39,6 @@ print(hasattr(obj1, "count"))  # obj1 has attribute count ? True
 setattr(obj1, "count", 40)
 print(obj1.count)
 
-#delattr(obj2, attribute)
+# delattr(obj2, attribute)
 delattr(sample, "count")
-print(sample.count) #AttributeError: type object 'sample' has no attribute 'count'
+# print(sample.count) #AttributeError: type object 'sample' has no attribute 'count'

@@ -20,11 +20,14 @@ print(dict2)
 
 print(dict2.items())  # tuple of (key,value) pair
 
-print(dict2.pop(2))  # pop value of specified key
-# print(dict2)
+print(dict2.pop(2))  # NOTE pops value of specified key
+print("dict2 pop", dict2)
 
 print(dict2.popitem())  # pops last key-value
 
-print(dict2.update({"key2": "value2"})) #None -> because it just updates and returns nothing
+print(
+    dict2.update({"key2": "value2"})
+)  # None -> because it just updates and returns nothing
 
 print(dict2.values())
+print(dict2.keys())

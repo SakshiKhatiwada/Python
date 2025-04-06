@@ -8,7 +8,7 @@ tup = ("hi", "I", 8)
 # tup = ('bye','she')
 # print(tup, id(tup))
 
-# tup[1] = "hi" #'tuple' object does not support item assignment
+# tup[1] = "hi" # ERR 'tuple' object does not support item assignment
 # print(tup)
 
 print(tup[1], tup[-1]) #+ve, -ve indexing

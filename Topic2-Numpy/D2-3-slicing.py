@@ -51,3 +51,5 @@ print(i)  # list of lists
 # arr[np.newaxis, :]	(1, n)	Makes a row vector
 # arr[:, np.newaxis]	(n, 1)	Makes a column vector
 # p[:, :, np.newaxis]	(n, m, 1)	Expands into 3D
+
+print([1, 2, 3] + "str") # ERR TypeError: can only concatenate list (not "str") to list

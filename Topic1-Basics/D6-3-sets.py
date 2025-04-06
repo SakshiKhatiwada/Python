@@ -6,16 +6,16 @@
 
 # Set Methods: add(), union(), intersection(), difference(), clear()
 
-set = {1, 2, 3, 4, 5}
+setvar = {1, 2, 3, 4, 5}
 
-set.add(9)
-print(set)
+setvar.add(9)
+print(setvar)
 
-set2={6,7,4}
+setvar2={6,7,4}
 
-print(set.union(set2))
-print(set.intersection(set2))
-print(set.difference(set2))
+print(setvar.union(setvar2))
+print(setvar.intersection(setvar2))
+print(setvar.difference(setvar2))
 
-set.clear()
-print(set) #set()
+setvar.clear()
+print(setvar) #set()
