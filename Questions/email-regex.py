@@ -10,8 +10,9 @@ pattern = r"(\w+)@(\w+)\.(\w+)"  # for email verification using GROUP ()
 match = re.search(pattern, text)
 
 if match:
-    # group(0) = entire matched text
+    # match.group(0) = entire matched text
     # print(match)
+    print(match.groups()) # returns a tuple of all the groups in the match
     username = match.group(1)
     domain = match.group(2)
     tld = match.group(3)  # Top-Level Domain
