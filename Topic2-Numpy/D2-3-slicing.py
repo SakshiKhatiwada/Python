@@ -28,10 +28,12 @@ b = np.where(d > 2, d, -1)
 e = np.array([10, 20, 32, 94, 58, 73])
 # print(a)
 f = [1, 3, 5]
-# print(e[f])  # NOTE - fancy indexing
+print("fancy indexing", e[f])  # NOTE - fancy indexing
 
 # SECTION - to find even numbers
 even = np.argwhere(e % 2 == 0).flatten()
+#  function is used to find the indices of array elements that are non-zero, grouped by element.
+# NOTE this gives indices of the corresponding element
 # print('even',e[even])
 
 # SECTION - reshaping array using np.arrange(), <arr_name>.reshape()
@@ -52,4 +54,4 @@ print(i)  # list of lists
 # arr[:, np.newaxis]	(n, 1)	Makes a column vector
 # p[:, :, np.newaxis]	(n, m, 1)	Expands into 3D
 
-print([1, 2, 3] + "str") # ERR TypeError: can only concatenate list (not "str") to list
+print([1, 2, 3] + "str")  # ERR TypeError: can only concatenate list (not "str") to list

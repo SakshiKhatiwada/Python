@@ -3,6 +3,7 @@
 import numpy as np
 
 a = np.array([[1, 2], [3, 4]])
+print("eigen: ", np.linalg.eig(a))
 eigenvalues, eigenvectors = np.linalg.eig(a)
 # print("eigenvalues ", eigenvalues, "\neigenvectors: \n", eigenvectors)
 # NOTE - eigenvectors is a colm vector

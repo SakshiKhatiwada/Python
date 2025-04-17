@@ -28,8 +28,8 @@ print("dir", dir(sample))  # attributes of the class, including of the ancestor 
 print(
     getattr(obj1, "count")
 )  # <built-in method count of str object at 0x000002945D30AC40>
-print(
-    getattr(obj1, "false", "msg: attribute not found")
+print('getattr',
+    getattr(obj1, "random", "msg: attribute not found")
 )  # without this, default is AttributeError
 
 # hasattr(object, attribute)
@@ -41,4 +41,4 @@ print(obj1.count)
 
 # delattr(obj2, attribute)
 delattr(sample, "count")
-# print(sample.count) #AttributeError: type object 'sample' has no attribute 'count'
+# print(sample.count) #ERR AttributeError: type object 'sample' has no attribute 'count'

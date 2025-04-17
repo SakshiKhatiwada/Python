@@ -21,8 +21,11 @@ li.extend((3, 7))  # adds tuple element as normal elements, extend the li
 # print(li)
 
 # SECTION - insert()
-li.insert(10, 93)  # insert(index, number), doesn't return any value
-# NOTE if given index doesn't lie in the range, it just inserts in the last index
+print(li)
+li.insert(1000, 93)  # insert(index, number), doesn't return any value
+# li = li + [123]
+print(li)
+# NOTE if given index doesn't lie in the range, it just inserts in the last index. We can't specify without index
 # print(li)
 
 # SECTION - count ()
@@ -54,7 +57,7 @@ li = [3, 5, 8, 2, 1]
 # li.sort(reverse=False)
 # print("sorted: ", li)
 
-#------------ custom sorting function
+# ------------ custom sorting function
 # def myFunc(e):
 #   return e['year']
 
@@ -68,6 +71,5 @@ li = [3, 5, 8, 2, 1]
 # cars.sort(key=myFunc)
 # print(cars)
 
-# li.reverse()
-# print(li) #reverse of the string
-
+li.reverse()
+print(li) #reverse of the string

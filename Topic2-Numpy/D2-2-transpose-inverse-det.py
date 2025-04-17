@@ -16,11 +16,6 @@ print("Transpose: ", a.T)  # Transpose the array
 print("Inverse: \n", np.linalg.inv(a))
 print("determinant:", np.linalg.det(a))
 
-print(np.diag(a)) #gives a vector of diagonal element
+print(np.diag(a))  # gives a vector of diagonal element
 c = np.diag(a)
-print(np.diag(c)) # gives diagonal matrix #OVERLOADED func
-
-
-
-
-
+print(np.diag(c))  # gives diagonal matrix #OVERLOADED func

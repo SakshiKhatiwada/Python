@@ -2,14 +2,14 @@ import numpy as np
 
 # NOTE NumPy = Numerical Python
 
-# print (np.__version__)
+print (np.__version__)
 
-# a = np.array([1, 2, 3, 3, 5])
+a = np.array([1, 2, 3, 3, 5])
 # print(a)
-# print(a.shape)
+print(a.shape)
 # print(a.dtype) #int64
-# print(a.ndim)
-# print(a.size)
+print(a.ndim)
+print(a.size)
 # print(a.itemsize, 'bytes')
 # print(a[0])
 
@@ -24,7 +24,7 @@ x = np.array([1, 2, 3])
 # l.append(4)
 # l = l+[5]
 
-# x.append(4)  # AttributeError
+# x.append(4)  # ERR AttributeError, can't append without calling np
 # x = x + np.array([4]) # 4 is added to each element -> #NOTE - Broadcasting
 # x = x + np.array([4,4,4]) # actual way, numpy does this to above
 # NOTE it performs elementwise operation!!
