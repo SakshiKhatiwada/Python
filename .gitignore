@@ -9,6 +9,7 @@ venv/
 ENV/
 env/
 .venv/
+Topic6-Scikit-Learn/sklearn-env/
 
 # VS Code settings (optional but common)
 .vscode/
