@@ -7,6 +7,8 @@ __pycache__/
 venv/
 .env/
 Langchain/2.ChatModels/.env
+**/**/.env
+Langchain/Langchain_Prompts/.env
 ENV/
 env/
 .venv/

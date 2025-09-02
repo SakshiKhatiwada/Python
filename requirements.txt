@@ -12,3 +12,4 @@ python-dotenv
 numpy
 scikit-learn
 sentence-transformers==5.1.0
+streamlit==1.49.1
