@@ -1,7 +1,7 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 import streamlit as st
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate, load_prompt
 
 load_dotenv()
 
@@ -40,39 +40,49 @@ length_input = st.selectbox(
 )
 
 # template
-template = PromptTemplate(
-    template="""
-Please summarize the research paper titled "{paper_input}" with the following specifications:
-Explanation Style: {style_input}
-Explanation Length: {length_input}
+# template = PromptTemplate(
+#     template="""
+# Please summarize the research paper titled "{paper_input}" with the following specifications:
+# Explanation Style: {style_input}
+# Explanation Length: {length_input}
 
-1. Mathematcal Details:
-    - Include relevant mathematical equations if present in the paper
-    - Explain the mathematical concepts using simple, intuitive code snippets where applicabe.
+# 1. Mathematcal Details:
+#     - Include relevant mathematical equations if present in the paper
+#     - Explain the mathematical concepts using simple, intuitive code snippets where applicabe.
 
-2. Analogies:
-    - Use relatable analogies to simplify complex ideas.
+# 2. Analogies:
+#     - Use relatable analogies to simplify complex ideas.
 
-If certain information is not available in the paper, respond with "Insufficient information available" instead of guessing.
-""",
-input_variables = ["paper_input", "style_input", "length_input"],
-validate_template = True # validates if all the placeholder variable names are in the variable input_variables
-)
+# If certain information is not available in the paper, respond with "Insufficient information available" instead of guessing.
+# """,
+# input_variables = ["paper_input", "style_input", "length_input"],
+# validate_template = True # validates if all the placeholder variable names are in the variable input_variables
+# )
+
+template = load_prompt('Langchain/Langchain_Prompts/template.json')
 
 # fill the placeholder
-prompt = template.invoke(
-    {
+# prompt = template.invoke(
+#     {
+#         "paper_input": paper_input,
+#         "style_input": style_input,
+#         "length_input": length_input,
+#     }
+# ) # making a chain instead of this code, to invoke only one time
+ 
+if st.button("Summarize"):
+    # # result = model.invoke(user_input)
+    # st.write(result.content)
+    # st.write("haha")
+    # result = model.invoke(prompt)
+    # ---------------------
+    chain = template | model
+    result = chain.invoke({
         "paper_input": paper_input,
         "style_input": style_input,
         "length_input": length_input,
-    }
-)
-
-if st.button("Summarize"):
-    # result = model.invoke(user_input)
-    # st.write(result.content)
-    # st.write("haha")
-    result = model.invoke(prompt)
+    })
+    
     st.write(result.content)
 
 # to run: streamlit run filename
