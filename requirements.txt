@@ -13,4 +13,6 @@ numpy
 scikit-learn
 sentence-transformers==5.1.0
 streamlit==1.49.1
-grandalf-0.8 # to visualize the chains
+grandalf==0.8 # to visualize the chains
+langchain_community==0.3.29
+pypdf==6.1.0

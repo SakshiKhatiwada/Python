@@ -5,3 +5,23 @@ Output Parsers can be used with both kind of models.
 💡 Types(mainly): Str Output Parser, JSON OP, Structured OP, Pydantic
 ---
 🔑🗒️ RunnableParallel takes dict, RunnableBranch takes tuple
+
+---
+llm = HuggingFaceEndpoint(
+  repo_id="mistralai/Mistral-7B-Instruct-v0.3",
+   task="text-generation"
+ )
+
+ --- LLM Generated Poem Summary: 
+ { The poem expresses the author's dissatisfaction with societal standards of "manliness" that associate it with toughness, insensitivity, and disrespect. The author values qualities such as kindness, understanding, and respect over the traditional masculine traits. They argue that one doesn't have to be cold-hearted, domineering, or disrespectful to be considered a man. Instead, they suggest that a "manly" person is someone who stands up for what they believe in, is authentic, and cares for others.
+
+The poem also raises questions about why certain qualities are associated with masculinity and why being kind or gentle is often seen as a weakness. It suggests that these views may be rooted in prejudice and incorrect beliefs that need to be challenged.
+
+In the end, the author asserts their belief that being good is not "manly" enough, but they would rather respect a person who is not "manly" enough, someone who knows what they want, is authentic, and cares for others. They argue that being good should not be seen as a weakness, and it is wrong to suppress one's good heart or kindness because it doesn't fit societal expectations of masculinity.
+
+Overall, the poem is a commentary on the societal expectations of masculinity and a call for a more balanced and inclusive definition of manhood.
+ }
+------------
+# NOTE: PyPDFLoader is a Document Loader in LangChain used to load content from PDF files and convert each page into a Document Object
+
+# Limitations: uses PyPDF lib under the hood, not great with scanned PDFs or complex layouts
