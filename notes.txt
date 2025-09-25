@@ -2,4 +2,6 @@ with_structured_output() has a parameter called "method": json mode (if we need 
 For OpenAI models, function calling is recommended. For Gemini and Claude, they support JSON Mode, so can use that. Both Not supported i.e. No structured Output => mistral, llama  
 We can't send unstructured output to Database, API,...
 Output Parsers can be used with both kind of models.
-Types(mainly): Str Output Parser, JSON OP, Structured OP, Pydantic
+💡 Types(mainly): Str Output Parser, JSON OP, Structured OP, Pydantic
+---
+🔑🗒️ RunnableParallel takes dict, RunnableBranch takes tuple
