@@ -24,9 +24,8 @@ loader = PyPDFLoader("/home/sakshi-khatiwada/Desktop/chatbot-assistant-for-adhd.
 # print(len(result))  # 2997 for size 10, 301 for 100
 
 # SECTION 
-# from langchain.text_splitter import (
-#     RecursiveCharacterTextSplitter,
-# )  # text-structured-based
+# from langchain.text_splitter import    RecursiveCharacterTextSplitter 
+ # text-structured-based
 
 # splitter2 = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=0)
 

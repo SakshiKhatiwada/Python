@@ -18,3 +18,5 @@ langchain_community==0.3.29
 pypdf==6.1.0
 bs4==0.0.2 # beautiful soup
 langchain_experimental==0.3.4
+
+youtube-transcript-api==1.2.2
