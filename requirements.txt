@@ -11,7 +11,7 @@ huggingface-hub
 python-dotenv
 numpy
 scikit-learn
-sentence-transformers==5.1.0
+sentence-transformers==5.1.1
 streamlit==1.49.1
 grandalf==0.8 # to visualize the chains
 langchain_community==0.3.29
