@@ -31,3 +31,5 @@ nltk==3.9.2
 wordcloud==1.9.4
 matplotlib==3.10.7
 seaborn
+
+ydata-profiling==4.18.0
