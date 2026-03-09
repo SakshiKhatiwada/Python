@@ -33,3 +33,9 @@ matplotlib==3.10.7
 seaborn
 
 ydata-profiling==4.18.0
+
+# for css-styling in terminal
+textual-8.0.0
+
+# telemetry for tracing
+opentelemetry-sdk==1.39.1
