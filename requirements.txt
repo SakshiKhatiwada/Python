@@ -27,7 +27,7 @@ fastapi[standard]
 
 
 # spam-filter used:
-nltk==3.9.3
+# nltk==3.9.3
 wordcloud==1.9.4
 matplotlib==3.10.7
 seaborn
